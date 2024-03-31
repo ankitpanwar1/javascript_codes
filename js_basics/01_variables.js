@@ -12,6 +12,6 @@ accountName = "sbi"
 let Name;
 //if we do not intialize a variable it will give you value undefined 
 console.log(Name);
-accountPassword = "123"
-accountEmail = "xy@"
+accountPassword = "123";
+accountEmail = "xy@";
 console.table([accountId,accountEmail,accountPassword]);
