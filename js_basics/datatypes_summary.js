@@ -46,3 +46,30 @@ const myFunction = function(){
 
 console.log(typeof anotherId);
 
+
+
+//*******************************************/
+ 
+//stack (primitive)   , heap (NON-primitive)
+
+let myyoutubename = "ankit";
+let anothername = myyoutubename;
+anothername = "shiv";
+//so in primitive type stack memory is used so the copy of data is created in stack memory
+//in this example the value myyoutube name is copied in anothername variable
+//so their will be no change in the original myyoutubename 
+
+
+let userone = {
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let usertwo = userone;
+usertwo.email = "ankit@google.com";
+
+console.log(userone);
+console.log(usertwo);
+
+//here we are passing the first object value of user one to the user two 
+//so the value here is passed as reference as it is non primitive data
+//so if wee change in any value in user tw it reflects in user one also
